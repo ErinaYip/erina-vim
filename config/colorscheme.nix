@@ -1,4 +1,4 @@
-{ lib, ... }: {
+{
   colorschemes.catppuccin.enable = false;
 
   extraConfigLua = ''
