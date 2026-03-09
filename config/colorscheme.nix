@@ -1,11 +1,11 @@
 {
-  colorschemes.catppuccin.enable = false;
+  colorschemes.catppuccin.enable = true;
 
-  extraConfigLua = ''
-    pcall(function()
-      require('noctalia').setup()
-    end)
-  '';
+  # extraConfigLua = ''
+  #   pcall(function()
+  #     require('noctalia').setup()
+  #   end)
+  # '';
 
   # colorschemes.base16.enable = true;
   # extraConfigLua = ''
