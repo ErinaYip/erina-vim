@@ -7,7 +7,10 @@ let
   mkServerConfig = file:
     let
       name = lib.removeSuffix ".nix" file;
-      config = import (./. + "/${file}");
+      imported = import (./. + "/${file}");
+      config = if builtins.isFunction imported
+               then imported { inherit pkgs; }
+               else imported;
     in {
       ${name} = {
         enable = true;

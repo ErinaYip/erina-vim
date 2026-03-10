@@ -11,4 +11,4 @@
       tsdk = "${pkgs.typescript}/lib/node_modules/typescript/lib";
     };
   };
- }
+}
