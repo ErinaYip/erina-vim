@@ -1,4 +1,4 @@
-{ lib, ... }:
+{ lib, pkgs,  ... }:
 let
   nixFiles = builtins.filter
     (name: name != "default.nix")
@@ -34,6 +34,10 @@ in {
       };
     };
   } // serversConfig;
+
+  extraPackages = with pkgs; [
+    typescript
+  ];
 
   diagnostic.settings = {
     virtual_text = true;

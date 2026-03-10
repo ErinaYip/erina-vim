@@ -1,4 +1,4 @@
-{
+{ pkgs, ... }: {
   cmd = [ "astro-ls" "--stdio" ];
   filetypes = [ "astro" ];
   root_markers = [
@@ -7,6 +7,8 @@
     "jsconfig.json"
   ];
   init_options = {
-    typescript = [ ];
+    typescript = {
+      tsdk = "${pkgs.typescript}/lib/node_modules/typescript/lib";
+    };
   };
  }
