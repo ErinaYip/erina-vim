@@ -32,6 +32,7 @@
       yaml # yaml 文件
       diff
       qmljs # QML
+      astro
     ];
   };
 }
