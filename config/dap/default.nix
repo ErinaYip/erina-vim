@@ -1,6 +1,6 @@
 { pkgs, lib, ... }:
 let
-  utils = import ../../_utils.nix;
+  utils = import ../_utils.nix;
   mkKeymapd = utils.mkKeymapd;
 in {
   imports = [
