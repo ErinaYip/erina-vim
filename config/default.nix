@@ -10,6 +10,7 @@
     ./snacks
     ./mini
 
+    ./autocmd.nix
     ./colorscheme.nix
     ./options.nix
     ./keymap.nix
