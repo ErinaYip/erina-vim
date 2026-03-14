@@ -41,6 +41,13 @@ in {
   extraPackages = with pkgs; [
     typescript
   ];
+  extraConfigLua = ''
+    vim.filetype.add({
+      extension = {
+        mdx = "mdx",
+      },
+    })
+  '';
 
   diagnostic.settings = {
     virtual_text = true;
