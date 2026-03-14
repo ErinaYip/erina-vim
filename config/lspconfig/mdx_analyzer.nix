@@ -4,5 +4,5 @@
   filetypes = [ "mdx" ];
   root_markers = [ "package.json" ];
   settings = {};
-  init_options.typescript.tsdk = "${pkgs.typescript}/lib";
+  init_options.typescript.tsdk = "${pkgs.typescript}/lib/node_modules/typescript/lib";
 }
