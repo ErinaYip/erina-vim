@@ -38,16 +38,13 @@ in {
     };
   } // serversConfig;
 
+  lsp.luaConfig.pre = ''
+    vim.filetype.add({ extension = { mdx = "mdx" } })
+  '';
+
   extraPackages = with pkgs; [
     typescript
   ];
-  extraConfigLua = ''
-    vim.filetype.add({
-      extension = {
-        mdx = "mdx",
-      },
-    })
-  '';
 
   diagnostic.settings = {
     virtual_text = true;

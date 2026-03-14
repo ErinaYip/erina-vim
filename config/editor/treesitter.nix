@@ -34,5 +34,6 @@
       qmljs # QML
       astro
     ];
+    languageRegister.markdown = "mdx";
   };
 }
